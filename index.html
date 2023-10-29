@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootStrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-md mt-5">
+        <h2 class="title">To Do List</h2>
+
+        <form action="" id="formSearch" class="mb-4" autocomplete="off">
+            <input type="text" placeholder="Search..." id="search" class="form-control">
+        </form>
+
+        <p id="result">No Result...</p>
+        <p id="empty">No Tasks...</p>
+        <ul class="list-unstyled list-group mb-4" id="holder">
+        </ul>
+
+        <form action="" id="formAdd" autocomplete="off">
+            <input type="text" id="add" class="form-control " placeholder="Add Task..." autofocus>
+            <button type="button" class="btn" id="deleteAll">Delete All</button>
+        </form>
+    </div>
+
+    <script src="./bootStrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/add.js"></script>
+</body>
+
+</html>

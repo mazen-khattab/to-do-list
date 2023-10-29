@@ -1,0 +1,159 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, black, #0c253d);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-md {
+    max-width: 800px;
+}
+
+@media (max-width: 576px) {
+    .container-md {
+        max-width: 300px;
+    }
+}
+
+.title {
+    margin-bottom: 70px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+input[type=text],
+input[type=text]:focus {
+    background: rgb(0 34 53 / 60%);
+    border: none;
+    color: #fff;
+}
+
+.container-md ul li {
+    background-color: #0c253d;
+    color: white;
+    border: 2px solid rgb(7 30 55);
+    overflow-wrap: anywhere;
+    padding: 0;
+}
+
+.container-md ul li:hover {
+    background-color: #062038;
+}
+
+input[type=text]::placeholder {
+    color: rgb(78, 78, 78);
+}
+
+.word {
+    padding: 15px;
+    flex: 1;
+    transition: 0.2s;
+}
+
+.delete {
+    cursor: pointer;
+    color: rgb(156, 2, 2);
+    margin-left: 10px;
+}
+
+.icons {
+    padding: 15px;
+    margin-left: 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.edit {
+    cursor: pointer;
+}
+
+#result,
+#empty {
+    text-align: center;
+    color: #707070;
+    display: none;
+    margin: 0;
+}
+
+#formAdd {
+    margin-bottom: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    opacity: 0.1;
+}
+
+.icon {
+    position: absolute;
+    right: -50px;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(0.68, -0.45, 0.29, 1.61);
+    z-index: -10;
+    opacity: 0;
+}
+
+#deleteAll {
+    background-color: #9a0404;
+    color: #9a0404;
+    overflow: hidden;
+    transition: 0.7s;
+    font-size: 13px;
+    height: 36px;
+    border: none;
+    opacity: 0;
+    width: 0px;
+    padding: 0;
+}
+
+#deleteAll:hover {
+    background-color: #b90101;
+}
+
+.switch {
+    margin: 0 15px 0 0;
+    width: 60px;
+    height: 25px;
+    border: 2px solid #0d335a;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: -90px;
+}
+
+.ball {
+    position: absolute;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #9c0202;
+    width: 20px;
+    left: 78%;
+    transform: translateX(-50%);
+    transition: 00.5s;
+    z-index: -1;
+}
+
+.status {
+    right: 170px;
+    margin: 0;
+    border-radius: 50px;
+    background-color: #9c0202;
+    padding: 5px 10px;
+    transition: 0.6s;
+    width: 94px;
+    text-align: center;
+    font-size: 13px;
+}
